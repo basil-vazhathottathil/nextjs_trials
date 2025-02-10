@@ -1,5 +1,4 @@
-import type { Config } from "tailwindcss";
-
+/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,11 +7,10 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+     colors:{
+      primary :'#7856ff'
+     }
     },
   },
   plugins: [],
-} satisfies Config;
+};
